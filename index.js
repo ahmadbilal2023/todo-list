@@ -14,7 +14,7 @@ while (looptype) {
             type: "confirm",
             name: "addmore",
             message: chalk.underline.red("Do you want to add more todo?"),
-            default: false
+            default: false,
         },
     ]);
     const { userToDo, addmore } = answers;
@@ -27,7 +27,6 @@ while (looptype) {
         console.log(`Kindly add valid input`);
     }
 }
-;
 console.log(todos);
 console.log("\n");
 if (todos.length > 0) {
